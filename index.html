@@ -153,6 +153,41 @@
     max-width:820px;
   }
 
+ /* ---------- PROFILE ---------- */
+  #profile{
+    background:var(--cream-soft);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .profile-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    margin-top:48px;
+  }
+  .profile-bio p{
+    font-size:17px;
+    line-height:1.85;
+    color:var(--ink-soft);
+    max-width:560px;
+  }
+  .profile-bio p + p{margin-top:18px;}
+  .chip{
+    font-size:13px;
+    padding:8px 16px;
+    border:1px solid var(--gold-deep);
+    color:var(--gold-deep);
+    border-radius:999px;
+    font-family:'Work Sans', sans-serif;
+  }
+  .profile-fact-list{border-left:1px solid var(--line); padding-left:32px;}
+  .profile-fact{padding:18px 0; border-bottom:1px solid var(--line);}
+  .profile-fact:first-child{padding-top:0;}
+  .profile-fact-k{font-size:12px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-deep); margin-bottom:6px;}
+  .profile-fact-v{font-family:'Fraunces', serif; font-size:20px; font-weight:500;}
+
+  @media(max-width:860px){ .profile-grid{grid-template-columns:1fr;} }
+  
   /* ---------- CONTACT ---------- */
   #contact{
     background:var(--photo-dark);
@@ -212,6 +247,37 @@
   <div class="hero-text">
     <div class="hero-hello">hello</div>
     <div class="hero-sub">my name is Pasha</div>
+  </div>
+</section>
+
+  <section id="profile">
+  <div class="section-label">Profile</div>
+  <h2 class="section-title">saya suka desain dan fotografi.</h2>
+  <div class="profile-grid">
+    <div class="profile-bio">
+      <p>Saya Pasha, ini profile saya, maaf kalau jelek. saya suka desain dan coding</p>
+      <p>saya suka coding, tapi ga bisa, ini aja saya pakai ai</p>
+    
+      <p class="edit-note">*Ganti paragraf ini dengan cerita dan fotomu sendiri.</p>
+    </div>
+    <div class="profile-fact-list">
+      <div class="profile-fact">
+        <div class="profile-fact-k">Fokus</div>
+        <div class="profile-fact-v">Pengembangan web PHP/MySQL</div>
+      </div>
+      <div class="profile-fact">
+        <div class="profile-fact-k">Perhatian</div>
+        <div class="profile-fact-v">Keamanan &amp; konsistensi UI</div>
+      </div>
+      <div class="profile-fact">
+        <div class="profile-fact-k">Minat lain</div>
+        <div class="profile-fact-v">Produksi konten digital</div>
+      </div>
+      <div class="profile-fact">
+        <div class="profile-fact-k">Basis</div>
+        <div class="profile-fact-v">Indonesia</div>
+      </div>
+    </div>
   </div>
 </section>
 
